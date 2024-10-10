@@ -27,4 +27,8 @@ public class UserSevice {
         return repository.save(obj);
     }
 
+    public void delete(Long id){
+        repository.deleteById(id);
+    }
+
 }
